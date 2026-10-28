@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZERIVE — здоровье твоя суперсила</title>
+<meta name="description" content="ZERIVE — здоровье по подписке. 100+ биомаркеров за один забор крови, биовозраст, персональный план и ИИ-врач. Впервые в Казахстане.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress"><span id="progressBar"></span></div>
+
+<nav class="nav" id="nav">
+  <a class="wm" href="#top">zer<span class="tit">i</span>ve</a>
+  <div class="nav__r">
+    <div class="langsw" role="group" aria-label="Язык · Language">
+      <svg class="langsw__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M3 12h18"></path>
+        <path d="M12 3c2.6 2.5 4 5.7 4 9s-1.4 6.5-4 9c-2.6-2.5-4-5.7-4-9s1.4-6.5 4-9z"></path>
+      </svg>
+      <button class="langsw__opt" type="button" data-lang="ru" aria-pressed="false">РУ</button>
+      <button class="langsw__opt" type="button" data-lang="kk" aria-pressed="false">ҚАЗ</button>
+      <button class="langsw__opt" type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="mlink solid" href="#access" data-i18n="nav.signup">[ Получить доступ ]</a>
+  </div>
+</nav>
+
+<nav class="rail" id="rail" aria-label="Разделы страницы" data-i18n="rail.aria" data-i18n-attr="aria-label">
+  <a class="rail__item is-active" href="#s-hero" data-target="s-hero"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.01">01 · Начало</span></a>
+  <a class="rail__item" href="#s-problem" data-target="s-problem"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.02">02 · Проблема</span></a>
+  <a class="rail__item" href="#s-body" data-target="s-body"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.03">03 · Тело</span></a>
+  <a class="rail__item" href="#s-num" data-target="s-num"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.04">04 · 100+</span></a>
+  <a class="rail__item" href="#s-test" data-target="s-test"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.05">05 · Тест</span></a>
+  <a class="rail__item" href="#s-app" data-target="s-app"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.06">06 · Приложение</span></a>
+  <a class="rail__item" href="#s-long" data-target="s-long"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.07">07 · Долголетие</span></a>
+  <a class="rail__item" href="#s-vita" data-target="s-vita"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.08">08 · Энергия</span></a>
+  <a class="rail__item" href="#s-market" data-target="s-market"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.09">09 · Маркет</span></a>
+  <a class="rail__item" href="#s-reviews" data-target="s-reviews"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.10">10 · Отзывы</span></a>
+  <a class="rail__item" href="#s-download" data-target="s-download"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.11">11 · Приложение</span></a>
+  <a class="rail__item" href="#pricing" data-target="pricing"><span class="rail__dot" aria-hidden="true"></span><span class="rail__label" data-i18n="rail.12">12 · Тарифы</span></a>
+</nav>
+
+<main id="top">
+
+  <!-- 01 · HERO -->
+  <section class="scene" id="s-hero" data-scene>
+    <div class="scene__pin">
+      <div class="scene__bg kb" style="background-image:url('assets/scene-vial.jpg')"></div>
+      <div class="scene__scrim scrim-hero"></div>
+      <div class="scene__content left bottom">
+        <p class="eyebrow" data-reveal><span class="dot">●</span> <span data-i18n="hero.eyebrow">zerive · здоровье по подписке</span></p>
+        <h1 class="display" data-split data-i18n="hero.h1">Здоровье — твоя суперсила</h1>
+        <p class="lead" data-reveal data-i18n="hero.lead">Загляни внутрь своего тела по 100+ биомаркерам. Биовозраст, персональный план и врач-консьерж — впервые в Казахстане.</p>
+        <a class="btn light" href="#access" data-reveal data-i18n="hero.cta">[ Ранний доступ ]</a>
+      </div>
+      <div class="scrollcue" data-reveal><span data-i18n="hero.scroll">Листай</span><i></i></div>
+    </div>
+  </section>
+
+  <!-- 02 · PROBLEM (text only) -->
+  <section class="scene scene--short dark" id="s-problem" data-scene>
+    <div class="scene__pin">
+      <div class="scene__content center wide">
+        <p class="eyebrow amber" data-reveal><span class="dot">●</span> <span data-i18n="problem.eyebrow">почему это важно</span></p>
+        <h2 class="statement" data-split data-i18n="problem.h2">Мы узнаём о болезни, когда уже поздно.</h2>
+        <p class="lead dim" data-reveal data-i18n="problem.lead">Обычный чек-ап — это 20–30 показателей раз в год. Тело подаёт сигналы задолго до диагноза. Их просто никто не читает.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · BODY (eye) -->
+  <section class="scene" id="s-body" data-scene>
+    <div class="scene__pin">
+      <div class="scene__bg" style="background-image:url('assets/scene-eye.jpg')"></div>
+      <div class="scene__scrim scrim-left"></div>
+      <div class="scene__content left">
+        <p class="eyebrow" data-reveal><span class="dot">●</span> <span data-i18n="body.eyebrow">твоя биология</span></p>
+        <h2 class="headline" data-split data-i18n="body.h2">Твоё тело говорит на языке данных</h2>
+        <p class="lead" data-reveal data-i18n="body.lead">ZERIVE переводит его на человеческий: понятные показатели вместо непонятных простыней анализов.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · NUMBER -->
+  <section class="scene scene--short warm" id="s-num" data-scene>
+    <div class="scene__pin">
+      <div class="scene__content center">
+        <p class="eyebrow ink-eb" data-reveal><span class="dot">●</span> <span data-i18n="num.eyebrow">один забор крови</span></p>
+        <div class="bignum" data-reveal><span data-count="100" data-suffix="+">0</span></div>
+        <h2 class="headline ink" data-split data-i18n="num.h2">биомаркеров за один тест</h2>
+        <p class="lead ink-dim" data-reveal data-i18n="num.lead">Сердце, печень, почки, гормоны, метаболизм, витамины и воспаление — в 10 раз глубже обычного анализа.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · TEST (lab) -->
+  <section class="scene" id="s-test" data-scene>
+    <div class="scene__pin">
+      <div class="scene__bg" style="background-image:url('assets/scene-lab.jpg')"></div>
+      <div class="scene__scrim scrim-left"></div>
+      <div class="scene__content left">
+        <p class="eyebrow" data-reveal><span class="dot">●</span> <span data-i18n="test.eyebrow">шаг 01</span></p>
+        <h2 class="headline" data-split data-i18n="test.h2">Сдай тест — дома или в лаборатории</h2>
+        <p class="lead" data-reveal data-i18n="test.lead">Один забор крови в партнёрской лаборатории или с выездом на дом. Результаты — за 5–7 дней.</p>
+        <div class="labs" data-reveal><span>INVIVO</span><span>OLYMP</span><span>SYNEVO</span><span>KDL</span><span data-i18n="test.labs_more">+ 40 городов</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · APP -->
+  <section class="scene dark" id="s-app" data-scene>
+    <div class="scene__pin">
+      <div class="scene__bg blur" style="background-image:url('assets/scene-nature.jpg')"></div>
+      <div class="scene__scrim scrim-full"></div>
+      <div class="scene__content split-cols">
+        <div class="col-text">
+          <p class="eyebrow" data-reveal><span class="dot">●</span> <span data-i18n="app.eyebrow">приложение zerive</span></p>
+          <h2 class="headline" data-split data-i18n="app.h2">Расшифруй свои результаты</h2>
+          <p class="lead" data-reveal data-i18n="app.lead">Чистая панель со скорами здоровья и биовозрастом — вместо непонятных лабораторных таблиц.</p>
+        </div>
+        <div class="phone" data-reveal data-depth="1.3">
+          <div class="phone__scr">
+            <div class="ph-head"><span class="ph-h" data-i18n="phone.title">Мой отчёт</span><span class="ph-date" data-i18n="phone.date">6 окт</span></div>
+            <div class="ph-score">
+              <div class="ring"><svg viewBox="0 0 120 120"><circle class="rtrack" cx="60" cy="60" r="52"/><circle class="rfill" id="rfill" cx="60" cy="60" r="52"/></svg><div class="ring__n"><b data-count="92" data-suffix="">0</b><small>/100</small></div></div>
+              <div class="ph-stats">
+                <div><span class="ph-l">ZERIVE Score</span><span class="ph-v green" data-i18n="phone.score_value">Отлично</span></div>
+                <div><span class="ph-l" data-i18n="phone.bioage_label">Биовозраст</span><span class="ph-v">27 <i data-i18n="phone.bioage_delta">−3 года</i></span></div>
+              </div>
+            </div>
+            <div class="ph-cats">
+              <div class="ph-cat"><span class="gr a">A</span><span data-i18n="phone.cat_heart">Сердце</span></div>
+              <div class="ph-cat"><span class="gr a">A</span><span data-i18n="phone.cat_liver">Печень</span></div>
+              <div class="ph-cat"><span class="gr b">B</span><span data-i18n="phone.cat_metabolism">Метаболизм</span></div>
+              <div class="ph-cat"><span class="gr a">A</span><span data-i18n="phone.cat_kidneys">Почки</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · LONGEVITY (nature) -->
+  <section class="scene" id="s-long" data-scene>
+    <div class="scene__pin">
+      <div class="scene__bg" style="background-image:url('assets/scene-nature.jpg')"></div>
+      <div class="scene__scrim scrim-bottom"></div>
+      <div class="scene__content left bottom">
+        <p class="eyebrow" data-reveal><span class="dot">●</span> <span data-i18n="long.eyebrow">биовозраст</span></p>
+        <h2 class="headline" data-split data-i18n="long.h2">Замедли свои биологические часы</h2>
+        <p class="lead" data-reveal data-i18n="long.lead">Узнай, насколько твоё тело моложе или старше паспорта — и как это изменить с персональным планом.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 · VITALITY (runner) -->
+  <section class="scene" id="s-vita" data-scene>
+    <div class="scene__pin">
+      <div class="scene__bg pos-top" style="background-image:url('assets/scene-runner.jpg')"></div>
+      <div class="scene__scrim scrim-bottom"></div>
+      <div class="scene__content center bottom">
+        <h2 class="display" data-split data-i18n="vita.h2">Живи дольше. Живи ярче.</h2>
+        <p class="lead" data-reveal data-i18n="vita.lead">Не просто дожить — прожить эти годы сильным, ясным и полным энергии.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · MARKET (supp) -->
+  <section class="scene scene--short" id="s-market" data-scene>
+    <div class="scene__pin">
+      <div class="scene__bg" style="background-image:url('assets/scene-supp.jpg')"></div>
+      <div class="scene__scrim scrim-left"></div>
+      <div class="scene__content left">
+        <p class="eyebrow" data-reveal><span class="dot">●</span> <span data-i18n="market.eyebrow">маркетплейс здоровья</span></p>
+        <h2 class="headline" data-split data-i18n="market.h2">Добавки из твоего плана — со скидкой участника</h2>
+        <p class="lead" data-reveal data-i18n="market.lead">Проверенные добавки, диагностика и препараты. −25% для участников ZERIVE, доставка по Казахстану.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · REVIEWS (testimonials ribbon) -->
+  <section class="reviews" id="s-reviews">
+    <div class="wrap">
+      <div class="rev-head">
+        <p class="eyebrow ink-eb" data-reveal><span class="dot">●</span> <span data-i18n="reviews.eyebrow">отзывы</span></p>
+        <h2 class="p-title" data-split data-i18n="reviews.h2">Что говорят участники</h2>
+        <p class="lead ink-dim" data-reveal data-i18n="reviews.lead">Реальные истории тех, кто уже заглянул внутрь себя.</p>
+      </div>
+    </div>
+    <div class="ribbon" role="group" aria-label="Отзывы участников ZERIVE" data-i18n="reviews.aria" data-i18n-attr="aria-label">
+      <div class="ribbon__row" data-row="a">
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r1">«Впервые увидела своё здоровье в цифрах, а не в ощущениях. Биовозраст оказался на 4 года меньше — приятно.»</blockquote><figcaption class="rev__by"><b class="rev__name">Аяна</b><span class="rev__city" data-i18n="city.almaty">Алматы</span></figcaption></figure>
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r2">«Сдал кровь один раз и получил 100+ показателей. Врач-консьерж всё объяснил простыми словами.»</blockquote><figcaption class="rev__by"><b class="rev__name">Данияр</b><span class="rev__city" data-i18n="city.astana">Астана</span></figcaption></figure>
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r3">«Нашли дефицит витамина D и железа, о которых я даже не подозревала. Через три месяца — совсем другая энергия.»</blockquote><figcaption class="rev__by"><b class="rev__name">Мадина</b><span class="rev__city" data-i18n="city.shymkent">Шымкент</span></figcaption></figure>
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r4">«План здоровья в приложении реально работает. Холестерин пришёл в норму без лишней паники.»</blockquote><figcaption class="rev__by"><b class="rev__name">Ерлан</b><span class="rev__city" data-i18n="city.karaganda">Караганда</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r1">«Впервые увидела своё здоровье в цифрах, а не в ощущениях. Биовозраст оказался на 4 года меньше — приятно.»</blockquote><figcaption class="rev__by"><b class="rev__name">Аяна</b><span class="rev__city" data-i18n="city.almaty">Алматы</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r2">«Сдал кровь один раз и получил 100+ показателей. Врач-консьерж всё объяснил простыми словами.»</blockquote><figcaption class="rev__by"><b class="rev__name">Данияр</b><span class="rev__city" data-i18n="city.astana">Астана</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r3">«Нашли дефицит витамина D и железа, о которых я даже не подозревала. Через три месяца — совсем другая энергия.»</blockquote><figcaption class="rev__by"><b class="rev__name">Мадина</b><span class="rev__city" data-i18n="city.shymkent">Шымкент</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r4">«План здоровья в приложении реально работает. Холестерин пришёл в норму без лишней паники.»</blockquote><figcaption class="rev__by"><b class="rev__name">Ерлан</b><span class="rev__city" data-i18n="city.karaganda">Караганда</span></figcaption></figure>
+      </div>
+      <div class="ribbon__row" data-row="b">
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r5">«Раньше чек-ап был стрессом. Здесь всё понятно: скор, биовозраст и чёткие шаги, что делать дальше.»</blockquote><figcaption class="rev__by"><b class="rev__name">Аружан</b><span class="rev__city" data-i18n="city.almaty">Алматы</span></figcaption></figure>
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r6">«Забор крови дома, результаты в телефоне за неделю. Это тот сервис, которого не хватало в Казахстане.»</blockquote><figcaption class="rev__by"><b class="rev__name">Тимур</b><span class="rev__city" data-i18n="city.astana">Астана</span></figcaption></figure>
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r7">«Отслеживаю метаболизм и гормоны каждые три месяца. Наконец-то вижу, что мои привычки правда меняют цифры.»</blockquote><figcaption class="rev__by"><b class="rev__name">Сабина</b><span class="rev__city" data-i18n="city.aktobe">Актобе</span></figcaption></figure>
+        <figure class="rev"><div class="rev__rate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r8">«Думал, что здоров, пока не увидел маркеры воспаления. Вовремя скорректировал — спасибо ZERIVE.»</blockquote><figcaption class="rev__by"><b class="rev__name">Нурлан</b><span class="rev__city" data-i18n="city.shymkent">Шымкент</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r5">«Раньше чек-ап был стрессом. Здесь всё понятно: скор, биовозраст и чёткие шаги, что делать дальше.»</blockquote><figcaption class="rev__by"><b class="rev__name">Аружан</b><span class="rev__city" data-i18n="city.almaty">Алматы</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r6">«Забор крови дома, результаты в телефоне за неделю. Это тот сервис, которого не хватало в Казахстане.»</blockquote><figcaption class="rev__by"><b class="rev__name">Тимур</b><span class="rev__city" data-i18n="city.astana">Астана</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r7">«Отслеживаю метаболизм и гормоны каждые три месяца. Наконец-то вижу, что мои привычки правда меняют цифры.»</blockquote><figcaption class="rev__by"><b class="rev__name">Сабина</b><span class="rev__city" data-i18n="city.aktobe">Актобе</span></figcaption></figure>
+        <figure class="rev" aria-hidden="true"><div class="rev__rate"><i></i><i></i><i></i><i></i><i></i></div><blockquote class="rev__text" data-i18n="reviews.r8">«Думал, что здоров, пока не увидел маркеры воспаления. Вовремя скорректировал — спасибо ZERIVE.»</blockquote><figcaption class="rev__by"><b class="rev__name">Нурлан</b><span class="rev__city" data-i18n="city.shymkent">Шымкент</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · DOWNLOAD APP -->
+  <section class="download" id="s-download">
+    <div class="wrap dl">
+      <div class="dl__text">
+        <p class="eyebrow ink-eb" data-reveal><span class="dot">●</span> <span data-i18n="dl.eyebrow">приложение</span></p>
+        <h2 class="p-title" data-split data-i18n="dl.h2">Скачай приложение ZERIVE</h2>
+        <p class="lead ink-dim" data-reveal data-i18n="dl.sub">Твой отчёт, план и ИИ-врач — всегда в кармане.</p>
+        <div class="stores" data-reveal>
+          <a class="store" href="#" aria-label="Download on the App Store">
+            <svg class="store__logo apple" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span class="store__t"><small data-i18n="dl.appstore_small">Загрузите в</small><b>App Store</b></span>
+          </a>
+          <a class="store" href="#" aria-label="Get it on Google Play">
+            <svg class="store__logo" viewBox="0 0 46 48" aria-hidden="true">
+              <path fill="#00C4FF" d="M6 4 L23 14 L6 24 Z"/>
+              <path fill="#FF3D2E" d="M23 14 L40 24 L6 24 Z"/>
+              <path fill="#00E676" d="M6 44 L23 34 L6 24 Z"/>
+              <path fill="#FFCE00" d="M23 34 L40 24 L6 24 Z"/>
+            </svg>
+            <span class="store__t"><small data-i18n="dl.play_small">Доступно в</small><b>Google Play</b></span>
+          </a>
+        </div>
+      </div>
+      <div class="dl__art" data-reveal data-depth="1.1">
+        <div class="appicon" aria-hidden="true">Z</div>
+        <span class="appicon__name">ZERIVE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="p-head">
+        <p class="eyebrow ink-eb" data-reveal><span class="dot">●</span> <span data-i18n="pricing.eyebrow">тарифы</span></p>
+        <h2 class="p-title" data-split data-i18n="pricing.title">Выбери свой уровень заботы</h2>
+        <p class="lead ink-dim" data-reveal data-i18n="pricing.lead">Три подписки — от базового чек-апа до максимального контроля здоровья. Без обязательств, отмена в любой момент.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier" data-reveal>
+          <div class="tier__top"><span class="tier__name" data-i18n="pricing.t1.name">Базовый</span><span class="tier__tag" data-i18n="pricing.t1.tag">старт</span></div>
+          <p class="tier__desc" data-i18n="pricing.t1.desc">Ежегодный чек-ап и понятная картина здоровья.</p>
+          <ul class="tier__list">
+            <li><i class="mk"></i><span data-i18n="pricing.t1.f1">100+ биомаркеров · 1 раз в год</span></li>
+            <li><i class="mk"></i><span data-i18n="pricing.t1.f2">Биовозраст и ZERIVE Score</span></li>
+            <li><i class="mk"></i><span data-i18n="pricing.t1.f3">Приложение и история данных</span></li>
+          </ul>
+          <div class="tier__price" data-i18n="pricing.price">Ранняя цена — для первых участников</div>
+          <a class="btn dark full" href="#access" data-i18n="pricing.btn_request">[ Оставить заявку ]</a>
+        </div>
+        <div class="tier tier--feat" data-reveal>
+          <div class="tier__top"><span class="tier__name" data-i18n="pricing.t2.name">Оптимальный</span><span class="tier__tag hot" data-i18n="pricing.t2.tag">выбор</span></div>
+          <p class="tier__desc" data-i18n="pricing.t2.desc">Полный контроль: план, врач и ретесты.</p>
+          <ul class="tier__list">
+            <li><i class="mk mk--a"></i><span data-i18n="pricing.t2.f1">Всё из «Базового»</span></li>
+            <li><i class="mk mk--a"></i><span data-i18n="pricing.t2.f2">Персональный план здоровья</span></li>
+            <li><i class="mk mk--a"></i><span data-i18n="pricing.t2.f3">ИИ-врач и команда заботы 24/7</span></li>
+            <li><i class="mk mk--a"></i><span data-i18n="pricing.t2.f4">−25% на маркетплейс</span></li>
+          </ul>
+          <div class="tier__price light" data-i18n="pricing.price">Ранняя цена — для первых участников</div>
+          <a class="btn accent full" href="#access" data-i18n="pricing.btn_early">[ Ранний доступ ]</a>
+        </div>
+        <div class="tier" data-reveal>
+          <div class="tier__top"><span class="tier__name" data-i18n="pricing.t3.name">Максимум</span><span class="tier__tag" data-i18n="pricing.t3.tag">premium</span></div>
+          <p class="tier__desc" data-i18n="pricing.t3.desc">Расширенные панели и приоритетная забота.</p>
+          <ul class="tier__list">
+            <li><i class="mk"></i><span data-i18n="pricing.t3.f1">Всё из «Оптимального»</span></li>
+            <li><i class="mk"></i><span data-i18n="pricing.t3.f2">Расширенные и специальные панели</span></li>
+            <li><i class="mk"></i><span data-i18n="pricing.t3.f3">Ретесты каждые 3 месяца</span></li>
+            <li><i class="mk"></i><span data-i18n="pricing.t3.f4">Персональный менеджер</span></li>
+          </ul>
+          <div class="tier__price" data-i18n="pricing.price">Ранняя цена — для первых участников</div>
+          <a class="btn dark full" href="#access" data-i18n="pricing.btn_request">[ Оставить заявку ]</a>
+        </div>
+      </div>
+      <p class="p-strip" data-i18n="pricing.strip">Во всех тарифах: забор крови в 40+ городах · оплата Kaspi / картой · доставка по Казахстану</p>
+    </div>
+  </section>
+
+  <!-- 13 · CTA + FOOTER -->
+  <section class="cta" id="access">
+    <div class="cta__bg" style="background-image:url('assets/scene-vial.jpg')"></div>
+    <div class="scene__scrim scrim-full"></div>
+    <div class="cta__inner">
+      <h2 class="display" data-split data-i18n="cta.h2">Начни с ZERIVE</h2>
+      <p class="lead" data-reveal data-i18n="cta.lead">Оставь почту — откроем ранний доступ первым в Казахстане.</p>
+      <form class="access" id="accessForm" data-reveal>
+        <input type="email" id="accessEmail" name="email" required autocomplete="email" placeholder="твоя почта" aria-label="твоя почта" data-i18n="cta.placeholder" data-i18n-attr="placeholder">
+        <button class="btn accent" type="submit" data-i18n="cta.btn">[ Записаться ]</button>
+      </form>
+      <p class="access__status" id="accessStatus" role="status" aria-live="polite"></p>
+      <p class="consent" data-reveal><span data-i18n="cta.consent">Кнопка откроет твой почтовый клиент с готовым письмом — оно уйдёт, только когда ты сам нажмёшь «Отправить». Адрес нужен нам лишь для приглашения в ранний доступ, мы не передаём его третьим лицам. Вопросы:</span> <a href="mailto:hello@zerive.kz">hello@zerive.kz</a></p>
+      <p class="finelabel" data-reveal data-i18n="cta.fine">оплата Kaspi / картой · результаты за 5–7 дней · отмена в любой момент</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__wm">zer<span class="tit">i</span>ve</div>
+      <div class="foot__meta">
+        <span data-i18n="foot.copy">© 2026 ZERIVE · Almaty · Astana · Shymkent · и расширяемся</span>
+        <div class="foot__links"><a href="#pricing" data-i18n="foot.link1">Тарифы</a><a href="#s-test" data-i18n="foot.link2">Лаборатории</a><a href="#access" data-i18n="foot.link3">Ранний доступ</a></div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

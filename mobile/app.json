@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "ZERIVE",
+    "slug": "zerive",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "zerive",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#EFECE6",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "kz.zerive.app",
+      "buildNumber": "1",
+      "icon": "./assets/expo.icon",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "kz.zerive.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#EFECE6",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "ZERIVE",
+      "themeColor": "#E1521B",
+      "backgroundColor": "#EFECE6"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#EFECE6",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ZERIVE uses your photos so you can upload lab result images to your Health Vault."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
